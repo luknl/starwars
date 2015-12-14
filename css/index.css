@@ -199,7 +199,7 @@ h1,
 .h1 {
   margin: 0 0 10px;
   font-weight: normal;
-  font-size: 2em;
+  font-size: 1em;
 }
 h2,
 .h2 {
@@ -302,17 +302,15 @@ body {
   color: #fff;
   padding: 5px;
 }
-#layer1 h1 {
-  -webkit-box-shadow: 0 0 0 600px #4cc1e3;
-  -moz-box-shadow: 0 0 0 600px #4cc1e3;
-  -o-box-shadow: 0 0 0 600px #4cc1e3;
-  box-shadow: 0 0 0 600px #4cc1e3;
+#layer1 {
+  background:url('tatoi.png') no-repeat;
+  background-position:0px 0px;
 }
-#layer2 h1 {
-  -webkit-box-shadow: 0 0 0 600px #4ba0bf;
-  -moz-box-shadow: 0 0 0 600px #4ba0bf;
-  -o-box-shadow: 0 0 0 600px #4ba0bf;
-  box-shadow: 0 0 0 600px #4ba0bf;
+#layer2 {
+    
+  background:url('imagetest2.png') no-repeat;
+  background-position:60px 0px;
+
 }
 #layer3 h1 {
   -webkit-box-shadow: 0 0 0 600px #497f9a;
@@ -370,4 +368,10 @@ body {
   padding: 10px;
   color: rgba(180, 180, 180, 0.7);
   font-size: 12px;
+}
+
+
+body {
+  background: url(ciel.png);
+    background-attachment: fixed;
 }
