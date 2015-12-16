@@ -1,0 +1,148 @@
+body{
+margin:0;
+padding:0;
+background: url("../imgs/universe.jpg") no-repeat;
+background-size:cover;
+background-position: center;
+background-attachment: fixed;
+}
+
+.starwars_logo {
+  width:500px;
+  opacity: 0;
+  animation:fade 7s ease;
+  animation-delay: 1s;
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin-top:-100px;
+  margin-left:-250px;
+}
+.tatooine{
+position: absolute;
+top:50%;
+left:50%;
+margin-top:-250px;
+margin-left:-300px;
+  width: 600px;
+  height:400px;
+  display: none;
+  animation:go 3s ease;
+}
+
+.tatooine1 h1{
+  font-size:100px;
+  text-align:center;
+  font-family: 'roboto';
+  color:white;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.tatooine1 p{
+  font-size:40px;
+  text-align:center;
+  font-family: 'roboto';
+  font-weight: 100;
+  color:white;
+}
+
+.text {
+    font-size:23px;
+    text-align:center;
+    font-family: 'Courier New', Courier;
+    color:white;
+    animation:go 2s ease;
+}
+
+.bar{
+  width: 50px;
+  height:5px;
+  margin:auto;
+  background:white;
+  padding-top:-30px;
+}
+
+.more{
+  width: 100px;
+  height: 50px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.more img{
+  margin:auto;
+  width: 80px;
+  margin-top:30px;
+  animation: bounce 2s ease infinite;
+  animation-delay: 2s;
+}
+
+.more img:hover{
+  background: rgba(111, 111, 111, 0.51);
+  border-radius: 50%;
+}
+
+.tatooine2{
+  display: none;
+}
+
+.go {
+  width:150px;
+  height: 60px;
+  margin: auto;
+  margin-top:70px;
+  animation:go 3s ease;
+  /*animation-delay: 2s;*/
+  text-align: center;
+  color:black;
+  border:3px solid black;
+}
+
+.go p {
+  line-height: 0px;
+  font-size:30px;
+  font-family: 'roboto';
+}
+
+.go:hover{
+  background: rgba(111, 111, 111, 0.51);
+  color:black;
+  border:3px solid black;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+@keyframes fade {
+    0% {opacity:0;transform:scale(.2);}
+    80% {opacity:1}
+    100% {transform:scale(1);}
+}
+
+@keyframes go {
+    0% {opacity:0;}
+    50% {opacity:1}
+    100% {opacity:1}
+}
+
+
+@keyframes bounce{
+  0% {transform: translateY(0);}
+  15% {transform: translateY(-20px);}
+  25% {transform: translateY(0);}
+  35% {transform: translateY(-10px);}
+  43% {transform: translateY(0);}
+}
+
+/*
+.button_start {
+ position:absolute;
+ width:100px;
+ background:red;
+ left:88%;
+ top:50%;
+ transition:all 1s;
+}*/

@@ -42,10 +42,10 @@ var zoom = (function ($) {
 
     function setActive() {
         // update menu
-        var position = current.layer + Math.round(current.progress);
+        var position = current.layer + (Math.round(current.progress));
 
         if (position !== current.menu) {
-            var layer = $('.layer[data-depth="' + position * distance + '"]');
+            var layer = $('.layer[data-depth="' + (position * distance) + '"]');
 
             nodes.menu.find('.' + classes.activeMenu).removeClass(classes.activeMenu);
 
@@ -117,3 +117,47 @@ var zoom = (function ($) {
 $(function () {
     zoom.init();
 });
+
+var y =1000;
+function button_start () {
+
+    var start=document.getElementsByTagName('body');
+    start[0].style.overflow='visible';
+    document.querySelector('.button_start').style.opacity='0';
+      if(y>=300) {
+    camera.position.set(0, 0, y);
+    y-=10;
+    console.log('coucou');
+  requestAnimationFrame( button_start );
+   }
+}
+
+function arrow_up () {
+
+    var x=0;
+
+    document.querySelector('.arrowUp').style.opacity='1';
+    setInterval(function() {
+        if(x==0) {
+            document.querySelector('.arrowUp').style.top='78%';
+            x=1;
+        }
+        else {
+            document.querySelector('.arrowUp').style.top='80%';
+            x=0;
+        }
+
+
+
+
+    },500);
+
+}
+function DesactivateHelp() {
+var scrollVerification = document.getElementsByTagName('body');
+  document.querySelector('.arrowUp').style.opacity='0';
+
+
+
+
+};

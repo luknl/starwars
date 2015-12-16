@@ -283,76 +283,131 @@ hr {
 .scene__depth {
   position: relative;
   z-index: 0;
+
 }
+
 
 body {
   font-family: 'open sans', sans-serif;
   font-size: 13px;
   line-height: 1.3;
   color: #fff;
-  -webkit-font-smoothing: antialiased;
   background: url(../imgs/sky.png);
+
   background-size:cover;
   background-attachment: fixed;
 }
+
 .layer h1 {
-  position: absolute;
+  /*position: absolute;
   top: 50%;
   left: 50%;
-  width: 600px;
-  height: 600px;
+  width: 300px;
+  height: 300px;
   margin: -150px 0 0 -150px;
   font-size: 10px;
   color: #fff;
-  padding: 5px;
-
-    /*width: 100%;
+  padding: 5px;*/
+    width: 100%;
     height: 100%;
     font-size: 10px;
-    color: #fff;*/
-}
-#layer1 {
-  background:url('../imgs/bg.png') no-repeat;
-  background-size:cover;
-  background-position:0px 30px;
+    color: #fff;
 }
 
-#layer2 h1{
-  background:url('../imgs/tatooine2.png') no-repeat;
-  background-size:cover;
-  background-position:0px -610px;
-  width: 2000px;
-  left:-200px;
-}
+#layer2 {
+  background:url('../imgs/1bis.png') no-repeat;
+  background-size:100%;
+  top:35%;
+  background-position:0px -400px;
 
-#layer3 h1 {
-  /*-webkit-box-shadow: 0 0 0 600px #497f9a;
-  -moz-box-shadow: 0 0 0 600px #497f9a;
-  -o-box-shadow: 0 0 0 600px #497f9a;
-  box-shadow: 0 0 0 600px #497f9a;*/
-    background:url('../imgs/bg.png') no-repeat;
-    background-size:cover;
-    background-position:0px -410px;
-    width: 2300px;
-    left:-250px;
 }
-#layer4 h1 {
-  -webkit-box-shadow: 0 0 0 600px #465d76;
-  -moz-box-shadow: 0 0 0 600px #465d76;
-  -o-box-shadow: 0 0 0 600px #465d76;
-  box-shadow: 0 0 0 600px #465d76;
+#layer3 {
+  background:url('../imgs/2.png') no-repeat;
+   background-size:100% ;
+   width:210%;
+   height:150%;
+  top:-20%;
+  left:-15%;
+  background-position:-555px -1000px;
 }
-#layer5 h1 {
-  -webkit-box-shadow: 0 0 0 600px #46455b;
-  -moz-box-shadow: 0 0 0 600px #46455b;
-  -o-box-shadow: 0 0 0 600px #46455b;
-  box-shadow: 0 0 0 600px #46455b;
+#layer4{
+  background:url('../imgs/3bis.png') no-repeat;
+   background-size:100% ;
+   width:200%;
+   height:150%;
+  top:-5%;
+  left:-51%;
+  background-position:-555px -800px;
 }
-#layer6 h1 {
-  -webkit-box-shadow: 0 0 0 600px #442b3f;
-  -moz-box-shadow: 0 0 0 600px #442b3f;
-  -o-box-shadow: 0 0 0 600px #442b3f;
-  box-shadow: 0 0 0 600px #442b3f;
+#layer5{
+background:url('../imgs/4bis.png') no-repeat;
+  background-size:100% ;
+   width:200%;
+   height:150%;
+  top:-5%;
+  left:-18%;
+  background-position:-555px -800px;
+}
+#layer6{
+ background:url('../imgs/5.png') no-repeat;
+
+    background-size:100% ;
+
+   width:200%;
+   height:150%;
+  top:-15%;
+  left:-10%;
+  background-position:-555px -800px;
+}
+#layer7{
+ background:url('../imgs/6.png') no-repeat;
+
+  background-size:100% ;
+   width:200%;
+   height:150%;
+  top:-15%;
+  left:-15%;
+  background-position:-555px -800px;
+}
+#layer8{
+ background:url('../imgs/7.png') no-repeat;
+
+  background-size:100% ;
+   width:200%;
+   height:150%;
+  top:13%;
+  left:-30%;
+  background-position:-255px -1080px;
+}
+#layer9{
+ background:url('../imgs/8.png') no-repeat;
+
+  background-size:100% ;
+   width:200%;
+   height:150%;
+  top:12%;
+  left:-18%;
+  background-position:-255px -1065px;
+}
+#layer10{
+ background:url('../imgs/9.png') no-repeat;
+
+  background-size:100% ;
+   width:220%;
+   height:150%;
+  top:0%;
+  left:-15%;
+  background-position:-755px -1065px;
+}
+#layer11{
+ background:url('../imgs/10.png') no-repeat;
+
+  background-size:100% ;
+   width:220%;
+   height:150%;
+  top:-10%;
+  left:-15%;
+  background-position:-755px -1065px;
 }
 .header {
   position: fixed;
@@ -387,3 +442,40 @@ body {
   color: rgba(180, 180, 180, 0.7);
   font-size: 12px;
 }
+
+.button_start {
+
+  position:absolute;
+  width:80px;
+  background:red;
+  left:88%;
+  top:50%;
+  transition:all 1s;
+}
+
+
+.arrowUp{
+  background:url(../imgs/arrow.png);
+  background-size:cover;
+  width:10em;
+  height:10em;
+  position:absolute;
+  left:45%;
+  top:80%;
+  transition:all 0.5s;
+  opacity:0;
+}
+
+
+
+
+/*  .filter_lunette {
+   background:url(../imgs/LUNETTES.png)no-repeat;
+   background-size:100%;
+
+   position:fixed;
+   width:100%;
+   height:100%;
+   z-index:100;
+
+}  */

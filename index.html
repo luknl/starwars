@@ -6,65 +6,40 @@
     <title>Star Wars</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimal-ui" />
     <link rel="icon" href="imgs/stromtrooper.png" />
-    <link type="text/css" rel="stylesheet" href="css/style.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="css/style2.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'><link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
+<body onload="load()">
+  <!-- <embed src="resources/theme.mp3" autostart="true" loop="false" hidden="true"></embed> -->
 
-    <!-- <header class="header">
-        <nav class="menu">
-            <a href="#layer1" class="menu__item"></a>
-            <a href="#layer2" class="menu__item"></a>
-            <a href="#layer3" class="menu__item"></a>
-            <a href="#layer4" class="menu__item"></a>
-            <a href="#layer5" class="menu__item"></a>
-            <a href="#layer6" class="menu__item"></a>
-        </nav>
-      </header> -->
+<img class="starwars_logo" src="imgs/starwars2.png" alt="star wars">
 
-    <!-- <footer class="footer">
-        &copy; 2014 OhDeer Games. All rights reserved.î
-    </footer> -->
+  <div class="planet"></div>
 
-    <div class="wrapper">
-        <div class="environment">
-            <div class="scene">
 
-                <div id="layer1" class="layer" data-depth="0">
-                    <h1>Layer 1</h1>
-                </div>
+  <!-- <a class='button_start' onclick='button_start()'>Explore</a> -->
 
-                <div id="layer2" class="layer" data-depth="400">
-                    <h1>Layer 2</h1>
-                </div>
 
-                <div id="layer3" class="layer" data-depth="1000">
-                    <h1>Layer 3</h1>
-                </div>
-
-                <div id="layer4" class="layer" data-depth="1500">
-                    <h1>Layer 4</h1>
-                </div>
-
-                <div id="layer5" class="layer" data-depth="2000">
-                    <h1>Layer 5</h1>
-                </div>
-
-                <div id="layer6" class="layer" data-depth="2500">
-                    <h1>Layer 6</h1>
-                </div>
-
-            </div>
-        </div>
+  <div class="tatooine">
+    <div class="tatooine1">
+      <h1>TATOOINE</h1>
+      <div class="bar"></div>
+      <p>Where everything begins.</p>
+      <div class="more"><img src="imgs/right-arrow.png" alt="arrow" /></div>
     </div>
 
-    <div class="scene__depth"></div>
+      <div class="tatooine2">
+      <p class="text">" Tatooine was a world located in Arkanis area, unknown and distant in the Outer Rim world of Star Wars. Orbiting two suns, Tatoo 1 and 2, Tatooine was almost completely covered with arid deserts and swept by devastating sandstorms.<br><br>
+Despite of its isolation, Tatooine still the center of galactic importants events, including being the original World of Anakin Skywalker, Jedi knight who became Darth Vader, carrying with it the fall of the Old Republic and the beginning of Star Wars Saga. "</p>
+<a href="starwars.html"><div class="go"><p>VISIT</p></div></a>
+</div>
 
-    <script src="js/libs/jquery-1.10.2.min.js"></script>
-    <script src="js/libs/underscore-min.js"></script>
-    <script src="js/utils.js"></script>
-    <script src="js/zoom.js"></script>
+    </div>
+
+<script src="js/three.min.js"></script>
+<script src="js/planet.js"></script>
 
 </body>
+
 </html>
