@@ -8,7 +8,6 @@ body {
   background-attachment: fixed;
 }
 
-<<<<<<< HEAD
 .layer h1 {
     width: 100%;
     height: 100%;
@@ -16,8 +15,6 @@ body {
     color: #fff;
 }
 
-=======
->>>>>>> origin/master
 #layer2 {
   background:url('../imgs/1bis.png') no-repeat;
   background-size:100%;
@@ -25,114 +22,109 @@ body {
   background-position:0px -400px;
 }
 
-<<<<<<< HEAD
   @keyframes go {
       0% {opacity:0;}
       50% {opacity:1}
       100% {opacity:1}
   }
 
-=======
->>>>>>> origin/master
 #layer3 {
   background:url('../imgs/2.png') no-repeat;
-  background-size:100% ;
-  width:210%;
-  height:150%;
+   background-size:100% ;
+   width:210%;
+   height:150%;
   top:-20%;
   left:-15%;
   background-position:-555px -1000px;
   animation:go 3s ease;
 }
-
 #layer4{
   background:url('../imgs/3.png') no-repeat;
-  background-size:100% ;
-  width:200%;
-  height:150%;
+   background-size:100% ;
+   width:200%;
+   height:150%;
   top:-5%;
   left:-51%;
   background-position:-555px -800px;
   animation:go 3s ease;
 }
-
 #layer5{
-  background:url('../imgs/4.png') no-repeat;
+background:url('../imgs/4.png') no-repeat;
   background-size:100% ;
-  width:200%;
-  height:150%;
+   width:200%;
+   height:150%;
   top:-5%;
   left:-18%;
   background-position:-555px -800px;
   animation:go 3s ease;
 }
-
 #layer6{
-  background:url('../imgs/5.png') no-repeat;
-  background-size:100% ;
-  width:200%;
-  height:150%;
+ background:url('../imgs/5.png') no-repeat;
+
+    background-size:100% ;
+
+   width:200%;
+   height:150%;
   top:-15%;
   left:-15%;
   background-position:-455px -800px;
   animation:go 3s ease;
 }
-
 #layer7{
-  background:url('../imgs/6.png') no-repeat;
+ background:url('../imgs/6.png') no-repeat;
+
   background-size:100% ;
-  width:200%;
-  height:150%;
+   width:200%;
+   height:150%;
   top:-34%;
   left:-15%;
   background-position:-555px -1000px;
   animation:go 3s ease;
 }
-
 #layer8{
-  background:url('../imgs/7.png') no-repeat;
+ background:url('../imgs/7.png') no-repeat;
+
   background-size:100% ;
-  width:200%;
-  height:150%;
+   width:200%;
+   height:150%;
   top:13%;
   left:-45%;
   background-position:-255px -1080px;
   animation:go 3s ease;
 }
-
 #layer9{
-  background:url('../imgs/8.png') no-repeat;
+ background:url('../imgs/8.png') no-repeat;
+
   background-size:100% ;
-  width:200%;
-  height:150%;
+   width:200%;
+   height:150%;
   top:12%;
   left:-24%;
   background-position:-181px -1205px;
   animation:go 3s ease;
 }
-
 #layer10{
-  background:url('../imgs/9.png') no-repeat;
+ background:url('../imgs/9.png') no-repeat;
+
   background-size:100% ;
-  width:220%;
-  height:150%;
+   width:220%;
+   height:150%;
   top:0%;
   left:-15%;
   background-position:-755px -1000px;
   animation:go 3s ease;
 }
-
 #layer11{
-  background:url('../imgs/10.png') no-repeat;
+ background:url('../imgs/10.png') no-repeat;
+
   background-size:100% ;
-  width:220%;
-  height:150%;
+   width:220%;
+   height:150%;
   top:-10%;
   left:-15%;
   background-position:-755px -1065px;
   animation:go 3s ease;
 }
-
 .header {
   position: fixed;
   top: 0;
@@ -141,46 +133,32 @@ body {
   z-index: 1000;
   text-align: center;
 }
-
 .menu {
-  display: inline-block;
-  margin: 0 auto;
+ display: inline-block;
+ margin: 0 auto;
 }
 
 .menu__bar{
-  width:100%;
-  height: 50px;
-  background-color: black;
-  border-radius: 0 0 10px 10px;
+ width:100%;
+ height: 50px;
+ background-color: black;
+ border-radius: 0 0 10px 10px;
 }
 .menu__item {
-  display: block;
-  float: left;
-  font-family: 'Courier New';
-  font-size : 15px;
-  text-decoration: none;
-  padding: 15px;
+ display: block;
+ float: left;
+ font-family: 'Courier New';
+ font-size : 13px;
+ text-decoration: none;
+ padding: 15px;
 }
 
 .menu__item:hover,
 .menu__item.menu__item--active {
-  color: #FFCA4F;
-}
-
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  text-align: center;
-  padding: 10px;
-  color: rgba(180, 180, 180, 0.7);
-  font-size: 12px;
+ color: #FFCA4F ;
 }
 
 .button_start {
-
   position:absolute;
   width:80px;
   background:red;
@@ -201,7 +179,6 @@ body {
   transition:all 0.5s;
   opacity:0;
 }
-
 .jeton {
   background:url(../imgs/jeton.png)no-repeat;
   background-size: cover;
@@ -217,60 +194,58 @@ body {
   width:50px;
   height:50px;
   opacity:1;
-  animation:bounce_shadow 1s infinite;
+   animation:bounceS 1s infinite;
 }
 
 #shadow1 {
-  position:absolute;
+   position:absolute;
   left:25%;
   top:39%;
-}
 
+}
 #shadow2 {
-  position:absolute;
+   position:absolute;
   left:34%;
   top:62%;
-}
 
+}
 #shadow3 {
-  position:absolute;
+   position:absolute;
   left:37%;
   top:62%;
-}
 
+}
 #shadow4 {
-  position:absolute;
+   position:absolute;
   left:32%;
   top:63%;
-}
 
+}
 #shadow5 {
-  position:absolute;
+   position:absolute;
   left:22%;
   top:85%;
-}
 
+
+}
 #shadow6 {
   position:absolute;
-  left:52%;
+    left:52%;
   top:66%;
 }
-
 #shadow7 {
   position:absolute;
-  left:50%;
+    left:50%;
   top:50%;
 }
-
 #shadow8 {
   position:absolute;
-  left:25%;
+    left:25%;
   top:61%;
 }
-
 #shadow9 {
   position:absolute;
-  left:35%;
+    left:35%;
   top:65%;
 }
 
@@ -278,75 +253,75 @@ body {
   position:absolute;
   left:25%;
   top:32%;
-}
 
+
+
+}
 @keyframes bounce {
   0%{transform:translateY(0);translateZ(0); }
   50%{transform:translateY(-5px);translateZ(0); }
   100%{transform:translateY(0px);translateZ(0);}
 }
 
-@keyframes bounce_shadow {
+@keyframes bounceS {
   0%{transform:translateY(-8px);translateZ(0); }
   50%{transform:translateY(0px);translateZ(0); }
   100%{transform:translateY(-8px);translateZ(0);}
 }
 
+
+
+
 #button2 {
   position:absolute;
-  left:34%;
+    left:34%;
   top:55%;
-  animation:bounce 1s infinite;
+   animation:bounce 1s infinite;
 }
 
 #button3 {
   position:absolute;
-  left:37%;
+    left:37%;
   top:57%;
-  animation:bounce 1s infinite;
+   animation:bounce 1s infinite;
 }
 
 #button4 {
   position:absolute;
-  left:32%;
+    left:32%;
   top:57%;
-  animation:bounce 1s infinite;
+   animation:bounce 1s infinite;
 }
-
 #button5 {
   position:absolute;
-  left:22%;
+    left:22%;
   top:77%;
-  animation:bounce 1s infinite;
+   animation:bounce 1s infinite;
 }
-
 #button6 {
   position:absolute;
-  left:52%;
+    left:52%;
   top:51%;
-  animation:bounce 1s infinite;
+   animation:bounce 1s infinite;
 }
-
 #button7 {
   position:absolute;
-  left:50%;
+    left:50%;
   top:45%;
-  animation:bounce 1s infinite;
+   animation:bounce 1s infinite;
 }
 #button8 {
   position:absolute;
-  left:25%;
+    left:25%;
   top:55%;
-  animation:bounce 1s infinite;
+   animation:bounce 1s infinite;
 }
-
 #button9 {
   position:absolute;
-  left:35%;
+    left:35%;
   top:60%;
-  animation:bounce 1s infinite;
+   animation:bounce 1s infinite;
 }
-
 /*   .filter_lunette {
  background:url(../imgs/LUNETTES.png)no-repeat;
  background-size:100%;
@@ -359,7 +334,10 @@ body {
 }   */
 
 #bruitage {
+
+
  background-size:100%;
+
  position:fixed;
  width:100%;
  height:100%;
