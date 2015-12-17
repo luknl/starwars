@@ -149,6 +149,8 @@ section {
 }
 body {
   line-height: 1;
+
+
 }
 ol,
 ul {
@@ -251,6 +253,7 @@ hr {
 .wrapper {
   position: fixed;
   z-index: 10;
+
 }
 .environment {
   top: 0;
@@ -331,7 +334,7 @@ body {
   background-position:-555px -1000px;
 }
 #layer4{
-  background:url('../imgs/3bis.png') no-repeat;
+  background:url('../imgs/3.png') no-repeat;
    background-size:100% ;
    width:200%;
    height:150%;
@@ -340,7 +343,7 @@ body {
   background-position:-555px -800px;
 }
 #layer5{
-background:url('../imgs/4bis.png') no-repeat;
+background:url('../imgs/4.png') no-repeat;
   background-size:100% ;
    width:200%;
    height:150%;
@@ -356,8 +359,8 @@ background:url('../imgs/4bis.png') no-repeat;
    width:200%;
    height:150%;
   top:-15%;
-  left:-10%;
-  background-position:-555px -800px;
+  left:-15%;
+  background-position:-455px -800px;
 }
 #layer7{
  background:url('../imgs/6.png') no-repeat;
@@ -365,9 +368,9 @@ background:url('../imgs/4bis.png') no-repeat;
   background-size:100% ;
    width:200%;
    height:150%;
-  top:-15%;
+  top:-34%;
   left:-15%;
-  background-position:-555px -800px;
+  background-position:-555px -1000px;
 }
 #layer8{
  background:url('../imgs/7.png') no-repeat;
@@ -376,7 +379,7 @@ background:url('../imgs/4bis.png') no-repeat;
    width:200%;
    height:150%;
   top:13%;
-  left:-30%;
+  left:-45%;
   background-position:-255px -1080px;
 }
 #layer9{
@@ -386,8 +389,8 @@ background:url('../imgs/4bis.png') no-repeat;
    width:200%;
    height:150%;
   top:12%;
-  left:-18%;
-  background-position:-255px -1065px;
+  left:-24%;
+  background-position:-181px -1205px;
 }
 #layer10{
  background:url('../imgs/9.png') no-repeat;
@@ -397,7 +400,7 @@ background:url('../imgs/4bis.png') no-repeat;
    height:150%;
   top:0%;
   left:-15%;
-  background-position:-755px -1065px;
+  background-position:-755px -1000px;
 }
 #layer11{
  background:url('../imgs/10.png') no-repeat;
@@ -465,17 +468,167 @@ background:url('../imgs/4bis.png') no-repeat;
   transition:all 0.5s;
   opacity:0;
 }
+.jeton {
+  background:url(../imgs/jeton.png)no-repeat;
+  background-size: cover;
+  width:50px;
+  height:50px;
+  opacity:1;
+  cursor:pointer;
+}
+
+.shadow {
+  background:url(../imgs/shadow.png)no-repeat;
+  background-size: cover;
+  width:50px;
+  height:50px;
+  opacity:1;
+   animation:bounceS 1s infinite;
+}
+
+#shadow1 {
+   position:absolute;
+  left:25%;
+  top:39%;
+
+}
+#shadow2 {
+   position:absolute;
+  left:34%;
+  top:62%;
+
+}
+#shadow3 {
+   position:absolute;
+  left:37%;
+  top:62%;
+
+}
+#shadow4 {
+   position:absolute;
+  left:32%;
+  top:63%;
+
+}
+#shadow5 {
+   position:absolute;
+  left:22%;
+  top:85%;
+
+
+}
+#shadow6 {
+  position:absolute;
+    left:52%;
+  top:66%;
+}
+#shadow7 {
+  position:absolute;
+    left:50%;
+  top:50%;
+}
+#shadow8 {
+  position:absolute;
+    left:25%;
+  top:61%;
+}
+#shadow9 {
+  position:absolute;
+    left:35%;
+  top:65%;
+}
+
+#button1 {
+  position:absolute;
+  left:25%;
+  top:32%;
+
+
+
+}
+@keyframes bounce {
+  0%{transform:translateY(0);translateZ(0); }
+  50%{transform:translateY(-5px);translateZ(0); }
+  100%{transform:translateY(0px);translateZ(0);}
+}
+
+@keyframes bounceS {
+  0%{transform:translateY(-8px);translateZ(0); }
+  50%{transform:translateY(0px);translateZ(0); }
+  100%{transform:translateY(-8px);translateZ(0);}
+}
 
 
 
 
-/*  .filter_lunette {
-   background:url(../imgs/LUNETTES.png)no-repeat;
-   background-size:100%;
+#button2 {
+  position:absolute;
+    left:34%;
+  top:55%;
+   animation:bounce 1s infinite;
+}
 
-   position:fixed;
-   width:100%;
-   height:100%;
-   z-index:100;
+#button3 {
+  position:absolute;
+    left:37%;
+  top:57%;
+   animation:bounce 1s infinite;
+}
 
-}  */
+#button4 {
+  position:absolute;
+    left:32%;
+  top:57%;
+   animation:bounce 1s infinite;
+}
+#button5 {
+  position:absolute;
+    left:22%;
+  top:77%;
+   animation:bounce 1s infinite;
+}
+#button6 {
+  position:absolute;
+    left:52%;
+  top:51%;
+   animation:bounce 1s infinite;
+}
+#button7 {
+  position:absolute;
+    left:50%;
+  top:45%;
+   animation:bounce 1s infinite;
+}
+#button8 {
+  position:absolute;
+    left:25%;
+  top:55%;
+   animation:bounce 1s infinite;
+}
+#button9 {
+  position:absolute;
+    left:35%;
+  top:60%;
+   animation:bounce 1s infinite;
+}
+/*   .filter_lunette {
+ background:url(../imgs/LUNETTES.png)no-repeat;
+ background-size:100%;
+
+ position:fixed;
+ width:100%;
+ height:100%;
+ z-index:100;
+
+}   */
+
+#bruitage {
+
+
+ background-size:100%;
+
+ position:fixed;
+ width:100%;
+ height:100%;
+ z-index:100;
+}

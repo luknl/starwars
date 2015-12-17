@@ -1,7 +1,7 @@
 body{
 margin:0;
 padding:0;
-background: url("../imgs/universe.jpg") no-repeat;
+background: url("../imgs/space.png") no-repeat;
 background-size:cover;
 background-position: center;
 background-attachment: fixed;
@@ -23,36 +23,28 @@ position: absolute;
 top:50%;
 left:50%;
 margin-top:-250px;
-margin-left:-300px;
-  width: 600px;
+margin-left:-325px;
+  width: 650px;
   height:400px;
   display: none;
   animation:go 3s ease;
 }
 
 .tatooine1 h1{
-  font-size:100px;
+  font-size:130px;
   text-align:center;
-  font-family: 'roboto';
+  font-family: 'open sans';
   color:white;
-  font-weight: 500;
-  margin-bottom: 30px;
+  font-weight: 650;
+  margin-bottom: 15px;
 }
 
 .tatooine1 p{
-  font-size:40px;
+  font-size:20px;
   text-align:center;
-  font-family: 'roboto';
+  font-family: 'Courier New', Courier;
   font-weight: 100;
   color:white;
-}
-
-.text {
-    font-size:23px;
-    text-align:center;
-    font-family: 'Courier New', Courier;
-    color:white;
-    animation:go 2s ease;
 }
 
 .bar{
@@ -60,55 +52,86 @@ margin-left:-300px;
   height:5px;
   margin:auto;
   background:white;
-  padding-top:-30px;
+  margin-bottom:30px;
+}
+
+.text {
+    font-size:20px;
+    line-height: 25px;
+    text-align:center;
+    font-family: 'Courier New', Courier;
+    color:white;
+    animation:go 2s ease;
 }
 
 .more{
-  width: 100px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   margin: auto;
   cursor: pointer;
-}
-
-.more img{
-  margin:auto;
-  width: 80px;
   margin-top:30px;
   animation: bounce 2s ease infinite;
-  animation-delay: 2s;
+  animation-delay: 1.5s;
+  background:url("../imgs/arrow3.png");
+  background-size:cover;
 }
 
-.more img:hover{
-  background: rgba(111, 111, 111, 0.51);
-  border-radius: 50%;
+.more:hover{
+  background:url("../imgs/arrow2.png");
+  background-size:cover;
+  animation:rotate .3s ease;
+}
+
+@keyframes rotate {
+    0% {transform:rotate(180deg);}
 }
 
 .tatooine2{
   display: none;
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin-top:-100px;
+  margin-left:-425px;
+  width: 850px;
+  height:400px;
+  animation:go 3s ease;
 }
 
 .go {
-  width:150px;
+  width:200px;
   height: 60px;
   margin: auto;
-  margin-top:70px;
-  animation:go 3s ease;
+  margin-top:50px;
   /*animation-delay: 2s;*/
-  text-align: center;
-  color:black;
-  border:3px solid black;
+  text-align: left;
+  padding-left:15px;
+  color:white;
+  border:2px solid white;
+}
+.go p {
+  line-height: 10px;
+  font-size:26px;
+  font-family: 'open sans';
 }
 
-.go p {
-  line-height: 0px;
-  font-size:30px;
-  font-family: 'roboto';
+.go img {
+  width: 50px;
+  position: absolute;
+  bottom:47px;
+  padding-left:125px;
+  animation: rocket 2s ease infinite;
 }
+
+@keyframes rocket{
+  0% {transform: translateX(0);}
+  50% {transform: translateX(15px);}
+  100% {transform: translateX(0);}
+}
+
 
 .go:hover{
-  background: rgba(111, 111, 111, 0.51);
-  color:black;
-  border:3px solid black;
+  background: rgba(111, 111, 111, 0.29);
 }
 
 a {
@@ -137,12 +160,25 @@ a {
   43% {transform: translateY(0);}
 }
 
-/*
-.button_start {
- position:absolute;
- width:100px;
- background:red;
- left:88%;
- top:50%;
- transition:all 1s;
-}*/
+.volume{
+  cursor: pointer;
+  position: absolute;
+  left:0;
+  top:10px;
+  position: absolute;
+  margin: 6.5px 0px 0px 60px;
+}
+
+.mute {
+    background: url(../imgs/mute.png);
+    background-size: 40px;
+    width: 40px;
+    height: 34px;
+}
+
+.sound {
+    background: url(../imgs/sound.png);
+    background-size: 40px;
+    width: 40px;
+    height: 34px
+}
