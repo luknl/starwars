@@ -167,7 +167,6 @@ background:url('../imgs/4.png') no-repeat;
   transition:all 1s;
 }
 
-
 .arrowUp{
   background:url(../imgs/arrow.png);
   background-size:cover;
@@ -179,6 +178,7 @@ background:url('../imgs/4.png') no-repeat;
   transition:all 0.5s;
   opacity:0;
 }
+
 .jeton {
   background:url(../imgs/jeton.png)no-repeat;
   background-size: cover;
@@ -342,4 +342,22 @@ background:url('../imgs/4.png') no-repeat;
  width:100%;
  height:100%;
  z-index:100;
+}
+
+.information1{
+  width: 400px;
+  height: auto;
+  bottom:0;
+  margin-left:1400px;
+  margin-top:300px;
+  background:linear-gradient(to right, rgba(64, 64, 64, 0.86),transparent);
+  padding:20px;
+  display: block;
+  opacity: 0;
+  transition: opacity .3s ;
+  line-height: 18px;
+}
+
+.visible{
+  opacity: 1;
 }

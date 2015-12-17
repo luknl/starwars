@@ -198,7 +198,12 @@ animate();function init(){
    renderer.render( scene, camera );
 }*/
 
-function Bulle1() {
+// function Bulle1() {
+//
+//
+// }
 
 
-}
+document.querySelector('#button3').addEventListener('click', function () {
+  document.querySelector('.information1').classList.toggle('visible');
+  });
