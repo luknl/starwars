@@ -54,7 +54,11 @@ var zoom = (function ($) {
             current.menu = position;
         }
     }
-    var verification_sound;
+
+
+
+
+    var verification_sound=null;
     function setZPosition(element, z) {
         element.css({
             '-webkit-transform': 'translate3d(0, 0px, ' + z + 'px)',
@@ -63,10 +67,40 @@ var zoom = (function ($) {
         });
 
         var sound=document.getElementById('bruitage');
-        if(z<600 && verification_sound!='resources/wind1.mp3'){
-            console.log('coucou');
-           sound.src='resources/wind1.mp3';
-           verification_sound=bruitage.src;
+        if(z<1900 && verification_sound!="http://www.random-ination.com/resources/wind3.mp3"){
+           sound.src='resources/wind3.mp3';
+           verification_sound=sound.src;
+           console.log(verification_sound);
+        }
+
+        if(z>=1900 && z<2350 && verification_sound!=null){
+          sound.src='';
+          verification_sound=sound.src;
+        }
+
+        if(z>=2350 && z<2900 && verification_sound!="http://www.random-ination.com/resources/wind3.mp3"){
+           sound.src='resources/wind3.mp3';
+           verification_sound=sound.src;
+           console.log(verification_sound);
+        }
+
+        if(z>=2900 && z<3300 && verification_sound!="http://www.random-ination.com/resources/fire1.mp3") {
+          sound.src='resources/fire1.mp3';
+           verification_sound=sound.src;
+        }
+
+        if(z>=3300 && z<4750 && verification_sound!="http://www.random-ination.com/resources/wind3.mp3") {
+           sound.src='resources/wind3.mp3';
+           verification_sound=sound.src;
+        }
+        if(z>=4750 && z<5400 && verification_sound!="http://www.random-ination.com/resources/droids.mp4") {
+           sound.src='resources/droids.mp4';
+           verification_sound=sound.src;
+
+        }
+        if(z>=5450 && verification_sound!="http://www.random-ination.com/resources/cantina.mp3") {
+           sound.src='resources/cantina.mp3';
+           verification_sound=sound.src;
         }
     }
 
@@ -126,19 +160,6 @@ $(function () {
 });
 
 var y =1000;
-/*function button_start () {
-
-    var start=document.getElementsByTagName('body');
-    start[0].style.overflow='visible';
-    document.querySelector('.button_start').style.opacity='0';
-      if(y>=300) {
-    camera.position.set(0, 0, y);
-    y-=10;
-    console.log('coucou');
-  requestAnimationFrame( button_start );
-   }
-}
-*/
 function arrow_up () {
 
     var x=0;
@@ -153,57 +174,31 @@ function arrow_up () {
             document.querySelector('.arrowUp').style.top='80%';
             x=0;
         }
-
-
-
-
     },500);
-
 }
+
 function DesactivateHelp() {
 var scrollVerification = document.getElementsByTagName('body');
   document.querySelector('.arrowUp').style.opacity='0';
-
-
-
-
 };
-/* var renderer, scene, camera, mesh;init();
-animate();function init(){
-   // on initialise le moteur de rendu
-   renderer = new THREE.WebGLRenderer();    // si WebGL ne fonctionne pas sur votre navigateur vous pouvez utiliser le moteur de rendu Canvas à la place
-   // renderer = new THREE.CanvasRenderer();
-   renderer.setSize( window.innerWidth, window.innerHeight );
-   document.querySelector('.scene').appendChild(renderer.domElement);    // on initialise la scène
-   scene = new THREE.Scene();    // on initialise la camera que l’on place ensuite sur la scène
-   camera = new THREE.PerspectiveCamera(35, window.innerWidth / window.innerHeight, 1, 10000 );
-   camera.position.set(0, 0, 1000);
-   scene.add(camera);
 
-  // on créé la sphère et on lui applique une texture sous forme d’image
-   var geometry = new THREE.SphereGeometry( 200, 42, 42 );
-   var material = new THREE.MeshBasicMaterial( { map:THREE.ImageUtils.loadTexture('imgs/texture.png'), overdraw: true } );
-   mesh = new THREE.Mesh( geometry, material );
-   scene.add( mesh );    // on ajoute une lumière blanche
-   var lumiere = new THREE.DirectionalLight( 0xffffff, 1.0 );
-   lumiere.position.set( 0, 0, 100 );
-   scene.add( lumiere );
-}function animate(){
-   // on appel la fonction animate() récursivement à chaque frame
-   requestAnimationFrame( animate );
-   // on fait tourner le cube sur ses axes x et y
 
-   mesh.rotation.y += 0.005;
-   // on effectue le rendu de la scène
-   renderer.render( scene, camera );
-}*/
+document.querySelector('#button1').addEventListener('click', function () {
+  document.querySelector('.information1').classList.toggle('visible');
+    });
 
-// function Bulle1() {
-//
-//
-// }
-
+document.querySelector('#button2').addEventListener('click', function () {
+  document.querySelector('.info_video').classList.toggle('visible');
+    });
 
 document.querySelector('#button3').addEventListener('click', function () {
-  document.querySelector('.information1').classList.toggle('visible');
-  });
+  document.querySelector('.information2').classList.toggle('visible');
+    });
+
+document.querySelector('#button4').addEventListener('click', function () {
+  document.querySelector('.information3').classList.toggle('visible');
+    });
+
+document.querySelector('#button5').addEventListener('click', function () {
+  document.querySelector('.information4').classList.toggle('visible');
+    });

@@ -57,19 +57,3 @@ document.querySelector('.more').addEventListener('click', function () {
     document.querySelector('.tatooine1').setAttribute("style", "display:none;");
     document.querySelector('.tatooine2').setAttribute("style", "display:block");
 });
-
-
-
-//
-// var y =1000;
-// function button_start () {
-//    var start=document.getElementsByTagName('body');
-//    start[0].style.overflow='visible';
-//    document.querySelector('.button_start').style.opacity='0';
-//      if(y>=300) {
-//    camera.position.set(0, 0, y);
-//    y-=10;
-//    console.log('coucou');
-//  requestAnimationFrame( button_start );
-//   }
-// }
